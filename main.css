@@ -125,6 +125,7 @@ hr {
 .ps-skill {
 	text-align: center;
 	color: #757575;
+	word-break: break-word;
 }
 @media (max-width: 1135px) {
 	.quarter {
@@ -151,6 +152,17 @@ hr {
 		width: 0;
 		flex-grow: 1;
 		min-width: 400px;
+	}
+}
+
+@media (max-width:798px) {
+	.flex{
+		justify-content: center;
+	}
+	.half,
+	.quarter{
+		min-width: unset;
+		width: 100%;
 	}
 }
 .row-padding,
