@@ -34,9 +34,14 @@ body {
     inset: 0;
     width: 100%;
     border-radius: 50%;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .padding-16 {
-	padding-top: 16px !important;
+	padding-top: 1em !important;
+	padding-bottom: 16px !important;
+	margin: 0;
+}
+.padding-bottom-16 {
 	padding-bottom: 16px !important;
 	margin: 0;
 }
@@ -106,4 +111,22 @@ h6 {
 	--stroke-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
 	--stroke-delay: 0.195s;
 	outline: 0;
+}
+
+.home-image {
+	width:1em;	
+}
+
+.light-grey,
+.hover-light-grey:hover,
+.light-gray,
+.hover-light-gray:hover {
+	color: #000 !important;
+	background-color: #f1f1f1 !important;
+}
+
+.white,
+.hover-white:hover {
+	color: #000 !important;
+	background-color: #fff !important;
 }
