@@ -35,43 +35,6 @@ body {
     width: 100%;
     border-radius: 50%;
 }
-.profile-image1 {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    border-radius: 50%;
-	filter: grayscale();
-}
-
-.profile-image:first-child {
-	z-index: 1;
-}
-.profile-image:first-child:hover {
-	opacity: 0;
-	transition-duration: 0.3s;
-}
-.profile-image:last-child {
-	opacity: 0;
-}
-.profile-image:first-child:hover + .profile-image {
-	opacity: 1;
-	transition-duration: 0.15s;
-}
-
-.profile-image1:first-child {
-	z-index: 1;
-}
-.profile-image1:first-child:hover {
-	opacity: 0;
-	transition-duration: 0.3s;
-}
-.profile-image1:last-child {
-	opacity: 0;
-}
-.profile-image1:first-child:hover + .profile-image1 {
-	opacity: 1;
-	transition-duration: 0.15s;
-}
 .padding-16 {
 	padding-top: 16px !important;
 	padding-bottom: 16px !important;
