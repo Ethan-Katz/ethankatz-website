@@ -35,7 +35,6 @@ body {
     width: 100%;
     border-radius: 50%;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-	aspect-ratio: 1/1;
 }
 .padding-16 {
 	padding-top: 1em !important;
