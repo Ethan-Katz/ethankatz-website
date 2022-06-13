@@ -107,6 +107,7 @@ body {
 	height: 75%;
 	display: block;
 	margin: auto;
+	aspect-ratio:  1/1;
 }
 hr {
 	border: 0;
