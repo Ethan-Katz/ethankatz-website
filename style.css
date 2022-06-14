@@ -1,132 +1,244 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
+	background-color: white;
 }
 
-.container {
-	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius: 60px;
-    padding: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.profile-images {
-    position: relative;
-    width: 300px;
-    height: 300px;
-}
-
-.profile-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    border-radius: 50%;
-	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.padding-16 {
-	padding-top: 1em !important;
-	padding-bottom: 16px !important;
-	margin: 0;
-}
-.padding-bottom-16 {
-	padding-bottom: 16px !important;
-	margin: 0;
-}
-h1 {
-	font-size: 36px;
-	color: black;
-}
-
-h2 {
-	font-size: 30px;
-	color: black;
-}
-
-h3 {
-	font-size: 24px;
-}
-
-h4 {
-	font-size: 20px;
-}
-
-h5 {
-	font-size: 18px;
-	color: black;
-}
-
-h6 {
-	font-size: 16px;
-}
-.description a svg {
-	display: inline;
-	position: relative;
-	left: -2px;
-	vertical-align: middle;
-	width: 13px;
-	height: 20px;
-	fill: none;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	stroke-width: 1px;
-	stroke: currentColor;
-	stroke-dasharray: 7.95 30;
-	stroke-dashoffset: var(--stroke-dashoffset, 46);
-	transition: stroke-dashoffset var(--stroke-duration, 0.15s)
-		var(--stroke-easing, linear) var(--stroke-delay, 0s);
-}
-.description a span {
-	background-image: linear-gradient(0deg, currentColor 0, currentColor 100%);
-	background-position: 100% 100%;
-	background-repeat: no-repeat;
-	background-size: var(--background-size, 100%) 1px;
-	transition: background-size 0.2s linear var(--background-delay, 0.15s);
-	transform: translateZ(0);
-}
-.description a {
-	color: inherit;
+a {
 	text-decoration: none;
+}
+
+/* Main Image */
+
+.mainImage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 42vw;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
 	z-index: 0;
-}
-.description a:hover,
-.description a:active,
-.description a:focus {
-	--background-size: 0%;
-	--background-delay: 0s;
-	--stroke-dashoffset: 26;
-	--stroke-duration: 0.3s;
-	--stroke-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
-	--stroke-delay: 0.195s;
-	outline: 0;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.5s;
 }
 
-.home-image {
-	width:1em;	
+.mainImage:hover {
+	width: 40vw;
+	z-index: -2;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 }
 
-.light-grey,
-.hover-light-grey:hover,
-.light-gray,
-.hover-light-gray:hover {
-	color: #000 !important;
-	background-color: #f1f1f1 !important;
+/* Github */
+
+.Github {
+	position: sticky;
+	transform: translateX(20vw);
+	margin: auto;
+	width: 15vw;
+	aspect-ratio: 1 /1;
+	z-index: -1;
+	border-radius: 50%;
+	background-color: oldlace;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-.white,
-.hover-white:hover {
-	color: #000 !important;
-	background-color: #fff !important;
+.Github:hover {
+	z-index: 2;
 }
+
+.Github:hover .gitImage {
+	width: 14vw;
+}
+
+.Github:hover .GithubText {
+	opacity: 1;
+}
+
+/* Github Image */
+
+.gitImage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 13vw;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	z-index: 0;
+	transition: 0.5s;
+}
+
+.gitImage:hover {
+	width: 14vw;
+}
+
+.gitImage:hover .GithubText {
+	opacity: 1;
+}
+
+/* Github Text */
+
+.GithubText {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	opacity: 0;
+	color: black;
+	font-weight: bolder;
+	text-align: center;
+	top: 100%;
+	font-size: 2.5vw;
+	position: sticky;
+	text-shadow: 0px 0px 10px white;
+	transition: 0.5s;
+}
+
+.GithubText:hover {
+	opacity: 1;
+}
+
+/* Linkedin */
+
+.Linkedin {
+	position: fixed;
+	transform: translateX(39vw) translateY(-11vw);
+	margin: auto;
+	width: 10vw;
+	aspect-ratio: 1 /1;
+	z-index: -1;
+	border-radius: 50%;
+	background-color: oldlace;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Linkedin:hover {
+	z-index: 2;
+}
+
+.Linkedin:hover .linkImage {
+	width: 9vw;
+}
+
+/* Linkedin Image */
+
+.linkImage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 8vw;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	z-index: 0;
+	transition: 0.5s;
+}
+
+.linkImage:hover {
+	width: 9vw;
+}
+
+.linkImage:hover .Linkedin {
+	z-index: 2;
+}
+
+/* Resume */
+
+.Resume {
+	position: sticky;
+	transform: translateX(-28vw);
+	margin: auto;
+	width: 25vw;
+	aspect-ratio: 1 /1;
+	z-index: -1;
+	border-radius: 50%;
+	background-color: oldlace;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Resume:hover {
+    z-index: 2;
+}
+
+.Resume:hover .resumeImage{
+    width: 23vw;
+}
+
+/* Resume Image */
+
+.resumeImage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 22vw;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	z-index: 0;
+	transition: 0.5s;
+}
+
+.resumeImage:hover {
+    width: 23vw;
+}
+
+/* Design of Page */
+
+.design {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 45vw;
+	aspect-ratio: 1 /1;
+	z-index: -2;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+
+/* Media Queries */
+
+/* @media (max-width: 600px) {
+	.mainImage {
+		width: 82vw;
+	}
+	.design {
+		width: 85vw;
+	}
+	.Github {
+		width: 25vw;
+		transform: translateX(25vw) translateY(-10vw);
+	}
+	.AboutMe {
+		width: 60vw;
+		transform: translateX(-15vw) translateY(40vw);
+	}
+	.Linkedin {
+		width: 20vw;
+		transform: translateX(4vw) translateY(-90vw);
+	}
+}
+
+@media (max-height: 600px) {
+	.mainImage {
+		width: 38vw;
+	}
+	.design {
+		width: 40vw;
+	}
+	.Github {
+		width: 13vw;
+	}
+	.AboutMe {
+		width: 22vw;
+		transform: translateX(-26vw);
+	}
+} */
