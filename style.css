@@ -6,6 +6,24 @@ a {
 	text-decoration: none;
 }
 
+/* Design of Page */
+
+.design {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 45vw;
+	aspect-ratio: 1 /1;
+	z-index: -2;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+
 /* Main Image */
 
 .mainImage {
@@ -15,7 +33,7 @@ a {
 	right: 0;
 	left: 0;
 	margin: auto;
-	width: 42vw;
+	width: 43vw;
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
 	z-index: 0;
@@ -24,7 +42,7 @@ a {
 }
 
 .mainImage:hover {
-	width: 40vw;
+	width: 42vw;
 	z-index: -2;
 	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 }
@@ -102,7 +120,7 @@ a {
 
 .Linkedin {
 	position: fixed;
-	transform: translateX(39vw) translateY(-11vw);
+	transform: translateX(38vw) translateY(15vw);
 	margin: auto;
 	width: 10vw;
 	aspect-ratio: 1 /1;
@@ -184,24 +202,6 @@ a {
 
 .resumeImage:hover {
     width: 23vw;
-}
-
-/* Design of Page */
-
-.design {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
-	width: 45vw;
-	aspect-ratio: 1 /1;
-	z-index: -2;
-	border-radius: 50%;
-	background-color: white;
-	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
-	transition: 0.5s;
 }
 
 /* Media Queries */
