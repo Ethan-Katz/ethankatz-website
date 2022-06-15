@@ -24,6 +24,41 @@ a {
 	transition: 0.5s;
 }
 
+/* About Arrow */
+
+.AboutArrow {
+	position: absolute;
+	transform: translateX(45vw);
+	margin: auto;
+	width: 15vw;
+	aspect-ratio: 1 /1;
+	z-index: 5;
+}
+
+.About-arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 100;
+	margin: auto;
+	height: 0vw;
+	width: 0vw;
+	border: 1vw solid;
+	border-color: orange orange transparent transparent;
+	transform: rotate(225deg);
+}
+
+.About-arrowText {
+	font-family: Rock Salt;
+	color: orange;
+	position: absolute;
+	top: 0.9vw;
+	font-size: 1.5vw;
+	word-wrap: break-word;
+	text-align: center;
+}
+
 /* Main Image */
 
 .mainImage {
@@ -100,7 +135,7 @@ a {
 /* Github Text */
 
 .GithubText {
-	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-family: Impact, "Arial Narrow Bold", sans-serif;
 	opacity: 0;
 	color: black;
 	font-weight: bolder;
@@ -114,6 +149,31 @@ a {
 
 .GithubText:hover {
 	opacity: 1;
+}
+
+/* Github Arrow */
+
+.GitArrow {
+	position: absolute;
+	transform: translateX(36vw) translateY(-13vw);
+	margin: auto;
+	width: 0vw;
+	aspect-ratio: 1 /1;
+	z-index: 10;
+}
+
+.git-arrow {
+	position: absolute;
+	top: 100;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 0vw;
+	width: 0vw;
+	border: 1vw solid;
+	border-color: black black transparent transparent;
+	transform: rotate(90deg);
 }
 
 /* Linkedin */
@@ -162,6 +222,31 @@ a {
 	z-index: 2;
 }
 
+/* Linked Arrow */
+
+.LinkArrow {
+	position: absolute;
+	transform: translateX(39vw) translateY(26vw);
+	margin: auto;
+	width: 0vw;
+	aspect-ratio: 1 /1;
+	z-index: 10;
+}
+
+.Link-arrow {
+	position: absolute;
+	top: 100;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 0vw;
+	width: 0vw;
+	border: 1vw solid;
+	border-color: #027fbd #027fbd transparent transparent;
+	transform: rotate(346deg);
+}
+
 /* Resume */
 
 .Resume {
@@ -177,11 +262,11 @@ a {
 }
 
 .Resume:hover {
-    z-index: 2;
+	z-index: 2;
 }
 
-.Resume:hover .resumeImage{
-    width: 23vw;
+.Resume:hover .resumeImage {
+	width: 23vw;
 }
 
 /* Resume Image */
@@ -201,7 +286,42 @@ a {
 }
 
 .resumeImage:hover {
-    width: 23vw;
+	width: 23vw;
+}
+
+/* Resume Arrow */
+
+.resumeArrow {
+	position: absolute;
+	transform: translateX(-13vw) translateY(-40vw);
+	margin: auto;
+	width: 15vw;
+	aspect-ratio: 1 /1;
+	z-index: 5;
+}
+
+.Res-arrow {
+	position: absolute;
+	top: 100;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 0vw;
+	width: 0vw;
+	border: 1vw solid;
+	border-color: green green transparent transparent;
+	transform: rotate(135deg);
+}
+
+.Res-arrowText {
+	font-family: Rock Salt;
+	color: green;
+	position: absolute;
+	top: 4.5vw;
+	font-size: 1.5vw;
+	word-wrap: break-word;
+	text-align: center;
 }
 
 /* Media Queries */
