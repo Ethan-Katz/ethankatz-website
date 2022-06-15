@@ -20,7 +20,7 @@ a {
 	z-index: -2;
 	border-radius: 50%;
 	background-color: white;
-	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.5s;
 }
 
@@ -50,13 +50,23 @@ a {
 }
 
 .About-arrowText {
-	font-family: Rock Salt;
+	font-family: Permanent Marker;
 	color: orange;
 	position: absolute;
-	top: 0.9vw;
-	font-size: 1.5vw;
+	top: 9vw;
+	right: 1vw;
+	font-size: 1.9vw;
 	word-wrap: break-word;
 	text-align: center;
+	transform: translateX(5.5vw);
+}
+
+.aboutLine {
+	image-rendering: optimizeSpeed;
+	position: absolute;
+	width: 15vw;
+	transform: translateX(-3vw) translateY(7.2vw);
+	filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(1deg) saturate(250%);
 }
 
 /* Main Image */
@@ -72,8 +82,9 @@ a {
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
 	z-index: 0;
-	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 	transition: 0.5s;
+	image-rendering: optimizeSpeed;
 }
 
 .mainImage:hover {
@@ -93,7 +104,7 @@ a {
 	z-index: -1;
 	border-radius: 50%;
 	background-color: oldlace;
-	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .Github:hover {
@@ -122,6 +133,7 @@ a {
 	border-radius: 50%;
 	z-index: 0;
 	transition: 0.5s;
+	image-rendering: optimizeSpeed;
 }
 
 .gitImage:hover {
@@ -187,7 +199,7 @@ a {
 	z-index: -1;
 	border-radius: 50%;
 	background-color: oldlace;
-	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .Linkedin:hover {
@@ -212,6 +224,7 @@ a {
 	border-radius: 50%;
 	z-index: 0;
 	transition: 0.5s;
+	image-rendering: optimizeSpeed;
 }
 
 .linkImage:hover {
@@ -258,7 +271,7 @@ a {
 	z-index: -1;
 	border-radius: 50%;
 	background-color: oldlace;
-	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .Resume:hover {
@@ -283,6 +296,7 @@ a {
 	border-radius: 50%;
 	z-index: 0;
 	transition: 0.5s;
+	image-rendering: optimizeSpeed;
 }
 
 .resumeImage:hover {
@@ -315,13 +329,23 @@ a {
 }
 
 .Res-arrowText {
-	font-family: Rock Salt;
+	font-family: Permanent Marker;
 	color: green;
 	position: absolute;
-	top: 4.5vw;
-	font-size: 1.5vw;
+	top: 0vw;
+	right: 1vw;
+	font-size: 1.9vw;
 	word-wrap: break-word;
 	text-align: center;
+	transform: translateX(3vw);
+}
+
+.resLine {
+	image-rendering: optimizeSpeed;
+	position: absolute;
+	width: 15vw;
+	transform: rotate(90deg) translateX(6vw) translateY(-4.1vw);
+	filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(100deg) saturate(150%);
 }
 
 /* Media Queries */
