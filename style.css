@@ -89,7 +89,6 @@ a {
 
 .mainImage:hover {
 	width: 44vw;
-	z-index: 0;
 	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -291,7 +290,6 @@ a {
 	margin: auto;
 	width: 22vw;
 	aspect-ratio: 1 / 1;
-	border-radius: 50%;
 	z-index: 0;
 	transition: 0.5s;
 }
