@@ -1,3 +1,9 @@
+:root {
+	--mobile: 0%;
+	--mobileArrow: 0vw;
+	--mobileText: 0%;
+}
+
 body {
 	background-color: white;
 }
@@ -15,7 +21,8 @@ a {
 	right: 0;
 	left: 0;
 	margin: auto;
-	width: 45vw;
+	width: calc(45vw + var(--mobile));
+	height: calc(45vw + var(--mobile));
 	aspect-ratio: 1 /1;
 	z-index: -2;
 	border-radius: 50%;
@@ -30,7 +37,7 @@ a {
 	position: absolute;
 	transform: translateX(45vw);
 	margin: auto;
-	width: 15vw;
+	width: calc(15vw + var(--mobile));
 	aspect-ratio: 1 /1;
 	z-index: 5;
 }
@@ -44,7 +51,7 @@ a {
 	margin: auto;
 	height: 0vw;
 	width: 0vw;
-	border: 1vw solid;
+	border: calc(1vw + var(--mobileArrow)) solid;
 	border-color: orange orange transparent transparent;
 	transform: rotate(225deg);
 }
@@ -56,7 +63,7 @@ a {
 	position: absolute;
 	top: 8vw;
 	right: 1vw;
-	font-size: 1.9vw;
+	font-size: calc(1.9vw + var(--mobileText));
 	word-wrap: break-word;
 	text-align: center;
 	transform: translateX(5.5vw);
@@ -64,7 +71,7 @@ a {
 
 .aboutLine {
 	position: sticky;
-	width: 15vw;
+	width: calc(15vw + var(--mobile));
 	z-index: -1;
 	transform: translateX(-3vw) translateY(7.2vw);
 	filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(1deg) saturate(250%);
@@ -79,7 +86,7 @@ a {
 	right: 0;
 	left: 0;
 	margin: auto;
-	width: 43vw;
+	width: calc(43vw + var(--mobile));
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
 	z-index: -2;
@@ -88,7 +95,7 @@ a {
 }
 
 .mainImage:hover {
-	width: 44vw;
+	width: calc(44vw + var(--mobile));
 	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -98,7 +105,7 @@ a {
 	position: sticky;
 	transform: translateX(20vw);
 	margin: auto;
-	width: 15vw;
+	width: calc(15vw + var(--mobile));
 	aspect-ratio: 1 /1;
 	z-index: -1;
 	border-radius: 50%;
@@ -111,12 +118,12 @@ a {
 }
 
 .Github:hover .gitImage {
-	width: 14vw;
+	width: calc(14vw + var(--mobile));
 }
 
-.Github:hover .GithubText {
+/* .Github:hover .GithubText {
 	opacity: 1;
-}
+} */
 
 /* Github Image */
 
@@ -127,7 +134,7 @@ a {
 	right: 0;
 	left: 0;
 	margin: auto;
-	width: 13vw;
+	width: calc(13vw + var(--mobile));
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
 	z-index: 0;
@@ -135,7 +142,7 @@ a {
 }
 
 .gitImage:hover {
-	width: 14vw;
+	width: calc(14vw + var(--mobile));
 }
 
 .gitImage:hover .GithubText {
@@ -144,7 +151,7 @@ a {
 
 /* Github Text */
 
-.GithubText {
+/* .GithubText {
 	font-family: Impact, "Arial Narrow Bold", sans-serif;
 	opacity: 0;
 	color: black;
@@ -159,7 +166,7 @@ a {
 
 .GithubText:hover {
 	opacity: 1;
-}
+} */
 
 /* Github Arrow */
 
@@ -181,7 +188,7 @@ a {
 	margin: auto;
 	height: 0vw;
 	width: 0vw;
-	border: 1vw solid;
+	border: calc(1vw + var(--mobileArrow)) solid;
 	border-color: black black transparent transparent;
 	transform: rotate(90deg);
 }
@@ -192,7 +199,7 @@ a {
 	position: absolute;
 	transform: translateX(38vw) translateY(15vw);
 	margin: auto;
-	width: 10vw;
+	width: calc(10vw + var(--mobile));
 	aspect-ratio: 1 /1;
 	z-index: -1;
 	border-radius: 50%;
@@ -205,7 +212,7 @@ a {
 }
 
 .Linkedin:hover .linkImage {
-	width: 9vw;
+	width: calc(9vw + var(--mobile));
 }
 
 /* Linkedin Image */
@@ -217,7 +224,7 @@ a {
 	right: 0;
 	left: 0;
 	margin: auto;
-	width: 8vw;
+	width: calc(8vw + var(--mobile));
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
 	z-index: 0;
@@ -225,7 +232,7 @@ a {
 }
 
 .linkImage:hover {
-	width: 9vw;
+	width: calc(9vw + var(--mobile));
 }
 
 .linkImage:hover .Linkedin {
@@ -252,7 +259,7 @@ a {
 	margin: auto;
 	height: 0vw;
 	width: 0vw;
-	border: 1vw solid;
+	border: calc(1vw + var(--mobileArrow)) solid;
 	border-color: #027fbd #027fbd transparent transparent;
 	transform: rotate(346deg);
 }
@@ -263,7 +270,7 @@ a {
 	position: sticky;
 	transform: translateX(-28vw);
 	margin: auto;
-	width: 25vw;
+	width: calc(25vw + var(--mobile));
 	aspect-ratio: 1 /1;
 	z-index: -1;
 	border-radius: 50%;
@@ -276,7 +283,7 @@ a {
 }
 
 .Resume:hover .resumeImage {
-	width: 23vw;
+	width: calc(23vw + var(--mobile));
 }
 
 /* Resume Image */
@@ -288,14 +295,14 @@ a {
 	right: 0;
 	left: 0;
 	margin: auto;
-	width: 22vw;
+	width: calc(22vw + var(--mobile));
 	aspect-ratio: 1 / 1;
 	z-index: 0;
 	transition: 0.5s;
 }
 
 .resumeImage:hover {
-	width: 23vw;
+	width: calc(23vw + var(--mobile));
 }
 
 /* Resume Arrow */
@@ -304,7 +311,7 @@ a {
 	position: absolute;
 	transform: translateX(-13vw) translateY(-40vw);
 	margin: auto;
-	width: 15vw;
+	width: calc(15vw + var(--mobile));
 	aspect-ratio: 1 /1;
 	z-index: 5;
 }
@@ -318,7 +325,7 @@ a {
 	margin: auto;
 	height: 0vw;
 	width: 0vw;
-	border: 1vw solid;
+	border: calc(1vw + var(--mobileArrow)) solid;
 	border-color: green green transparent transparent;
 	transform: rotate(135deg);
 }
@@ -330,7 +337,7 @@ a {
 	position: absolute;
 	top: -1vw;
 	right: 1vw;
-	font-size: 1.9vw;
+	font-size: calc(1.9vw + var(--mobileText));
 	word-wrap: break-word;
 	text-align: center;
 	transform: translateX(3vw);
@@ -338,7 +345,7 @@ a {
 
 .resLine {
 	position: sticky;
-	width: 15vw;
+	width: calc(15vw + var(--mobile));
 	z-index: -1;
 	transform: rotate(90deg) translateX(6vw) translateY(-4.1vw);
 	filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(100deg)
@@ -347,26 +354,71 @@ a {
 
 /* Media Queries */
 
-/* @media (max-width: 600px) {
-	.mainImage {
-		width: 53vw;
+@media (max-width: 700px) {
+	
+	/* Root Media */
+	
+	:root {
+		--mobile: 12vw;
 	}
+	:root {
+		--mobileArrow: 1vw;
+	}
+	:root {
+		--mobileText: 1vw;
+	}
+	
+	/* About Media */
+	
 	.AboutArrow {
-		width: 25vw;
+		transform: translateX(56vw) translateY(-19vw);
 	}
 	.About-arrow {
-		
-	}
-	.About-arrowText {
-		
+		transform: rotate(208deg);
 	}
 	.aboutLine {
-		width: 25vw;
+		transform: rotate(-25deg) translateX(-6.5vw) translateY(-7vw) scaleX(-1);
 	}
-	.design {
-		width: 55vw;
+	.About-arrowText {
+		transform: translateX(-5vw) translateY(-25vw);
 	}
-	.mainImage:hover {
-		width: 54vw;
+	
+	/* GitHub Media */
+	
+	.Github {
+		transform: translateX(-10vw) translateY(-20vw);
 	}
-} */
+	.GitArrow {
+		transform: translateX(6vw) translateY(-43vw);
+	}
+	
+	/* Linkedin Media */
+	
+	.Linkedin {
+		transform: translateX(35vw) translateY(20vw);
+	}
+	.LinkArrow {
+		transform: translateX(32vw) translateY(38vw);
+	}
+	.Link-arrow {
+		transform: rotate(375deg);
+	}
+	
+	/* Resume Media */
+	
+	.Resume {
+		transform: translateX(-28vw) translateY(10vw);
+	}
+	.resumeArrow {
+		transform: translateX(-25vw) translateY(-50vw);
+	}
+	.Res-arrow {
+		transform: rotate(105deg);
+	}
+	.resLine {
+		transform: rotate(60deg) translateX(8vw) translateY(1.5vw);
+	}
+	.Res-arrowText {
+		transform: translateX(3.5vw) translateY(-5vw);
+	}
+}
