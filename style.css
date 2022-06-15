@@ -62,11 +62,10 @@ a {
 }
 
 .aboutLine {
-	image-rendering: optimizeSpeed;
-	position: absolute;
+	position: sticky;
 	width: 15vw;
 	transform: translateX(-3vw) translateY(7.2vw);
-	filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(1deg) saturate(250%);
+	filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(1deg) saturate(250%);
 }
 
 /* Main Image */
@@ -84,7 +83,6 @@ a {
 	z-index: -2;
 	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 	transition: 0.5s;
-	image-rendering: optimizeSpeed;
 }
 
 .mainImage:hover {
@@ -133,7 +131,6 @@ a {
 	border-radius: 50%;
 	z-index: 0;
 	transition: 0.5s;
-	image-rendering: optimizeSpeed;
 }
 
 .gitImage:hover {
@@ -224,7 +221,6 @@ a {
 	border-radius: 50%;
 	z-index: 0;
 	transition: 0.5s;
-	image-rendering: optimizeSpeed;
 }
 
 .linkImage:hover {
@@ -296,7 +292,6 @@ a {
 	border-radius: 50%;
 	z-index: 0;
 	transition: 0.5s;
-	image-rendering: optimizeSpeed;
 }
 
 .resumeImage:hover {
@@ -341,9 +336,35 @@ a {
 }
 
 .resLine {
-	image-rendering: optimizeSpeed;
-	position: absolute;
+	position: sticky;
 	width: 15vw;
 	transform: rotate(90deg) translateX(6vw) translateY(-4.1vw);
-	filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(100deg) saturate(150%);
+	filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(100deg)
+		saturate(150%);
 }
+
+/* Media Queries */
+
+/* @media (max-width: 600px) {
+	.mainImage {
+		width: 53vw;
+	}
+	.AboutArrow {
+		width: 25vw;
+	}
+	.About-arrow {
+		
+	}
+	.About-arrowText {
+		
+	}
+	.aboutLine {
+		width: 25vw;
+	}
+	.design {
+		width: 55vw;
+	}
+	.mainImage:hover {
+		width: 54vw;
+	}
+} */
