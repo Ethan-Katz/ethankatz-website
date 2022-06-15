@@ -81,16 +81,16 @@ a {
 	width: 43vw;
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
-	z-index: 0;
-	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	z-index: -2;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 	transition: 0.5s;
 	image-rendering: optimizeSpeed;
 }
 
 .mainImage:hover {
-	width: 42vw;
-	z-index: -2;
-	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+	width: 44vw;
+	z-index: 0;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* Github */
@@ -347,42 +347,3 @@ a {
 	transform: rotate(90deg) translateX(6vw) translateY(-4.1vw);
 	filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(100deg) saturate(150%);
 }
-
-/* Media Queries */
-
-/* @media (max-width: 600px) {
-	.mainImage {
-		width: 82vw;
-	}
-	.design {
-		width: 85vw;
-	}
-	.Github {
-		width: 25vw;
-		transform: translateX(25vw) translateY(-10vw);
-	}
-	.AboutMe {
-		width: 60vw;
-		transform: translateX(-15vw) translateY(40vw);
-	}
-	.Linkedin {
-		width: 20vw;
-		transform: translateX(4vw) translateY(-90vw);
-	}
-}
-
-@media (max-height: 600px) {
-	.mainImage {
-		width: 38vw;
-	}
-	.design {
-		width: 40vw;
-	}
-	.Github {
-		width: 13vw;
-	}
-	.AboutMe {
-		width: 22vw;
-		transform: translateX(-26vw);
-	}
-} */
