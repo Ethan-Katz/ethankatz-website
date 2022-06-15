@@ -51,6 +51,7 @@ a {
 
 .About-arrowText {
 	font-family: Permanent Marker;
+	z-index: 0;
 	color: orange;
 	position: absolute;
 	top: 9vw;
@@ -64,6 +65,7 @@ a {
 .aboutLine {
 	position: sticky;
 	width: 15vw;
+	z-index: -1;
 	transform: translateX(-3vw) translateY(7.2vw);
 	filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(1deg) saturate(250%);
 }
@@ -325,6 +327,7 @@ a {
 
 .Res-arrowText {
 	font-family: Permanent Marker;
+	z-index: 0;
 	color: green;
 	position: absolute;
 	top: 0vw;
@@ -338,6 +341,7 @@ a {
 .resLine {
 	position: sticky;
 	width: 15vw;
+	z-index: -1;
 	transform: rotate(90deg) translateX(6vw) translateY(-4.1vw);
 	filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(100deg)
 		saturate(150%);
