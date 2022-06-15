@@ -54,7 +54,7 @@ a {
 	z-index: 0;
 	color: orange;
 	position: absolute;
-	top: 9vw;
+	top: 8vw;
 	right: 1vw;
 	font-size: 1.9vw;
 	word-wrap: break-word;
@@ -330,7 +330,7 @@ a {
 	z-index: 0;
 	color: green;
 	position: absolute;
-	top: 0vw;
+	top: -1vw;
 	right: 1vw;
 	font-size: 1.9vw;
 	word-wrap: break-word;
