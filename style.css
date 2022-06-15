@@ -121,10 +121,6 @@ a {
 	width: calc(14vw + var(--mobile));
 }
 
-/* .Github:hover .GithubText {
-	opacity: 1;
-} */
-
 /* Github Image */
 
 .gitImage {
@@ -144,29 +140,6 @@ a {
 .gitImage:hover {
 	width: calc(14vw + var(--mobile));
 }
-
-.gitImage:hover .GithubText {
-	opacity: 1;
-}
-
-/* Github Text */
-
-/* .GithubText {
-	font-family: Impact, "Arial Narrow Bold", sans-serif;
-	opacity: 0;
-	color: black;
-	font-weight: bolder;
-	text-align: center;
-	top: 100%;
-	font-size: 2.5vw;
-	position: sticky;
-	text-shadow: 0px 0px 10px white;
-	transition: 0.5s;
-}
-
-.GithubText:hover {
-	opacity: 1;
-} */
 
 /* Github Arrow */
 
@@ -377,10 +350,10 @@ a {
 		transform: rotate(208deg);
 	}
 	.aboutLine {
-		transform: rotate(-25deg) translateX(-6.5vw) translateY(-7vw) scaleX(-1);
+		transform: rotate(-25deg) translateX(-7.5vw) translateY(-7vw) scaleX(-1);
 	}
 	.About-arrowText {
-		transform: translateX(-5vw) translateY(-25vw);
+		transform: translateX(-8vw) translateY(-25vw);
 	}
 	
 	/* GitHub Media */
