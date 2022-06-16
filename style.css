@@ -327,7 +327,7 @@ a {
 
 /* Media Queries */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 	
 	/* Root Media */
 	
@@ -371,10 +371,10 @@ a {
 		transform: translateX(35vw) translateY(20vw);
 	}
 	.LinkArrow {
-		transform: translateX(32vw) translateY(38vw);
+		transform: translateX(55vw) translateY(26vw);
 	}
 	.Link-arrow {
-		transform: rotate(375deg);
+		transform: rotate(195deg);
 	}
 	
 	/* Resume Media */
@@ -383,15 +383,15 @@ a {
 		transform: translateX(-28vw) translateY(10vw);
 	}
 	.resumeArrow {
-		transform: translateX(-25vw) translateY(-50vw);
+		transform: translateX(6vw) translateY(-3vw) scaleY(-1) scaleX(-1);
 	}
 	.Res-arrow {
-		transform: rotate(105deg);
+		transform: rotate(70deg);
 	}
 	.resLine {
 		transform: rotate(60deg) translateX(8vw) translateY(1.5vw);
 	}
 	.Res-arrowText {
-		transform: translateX(3.5vw) translateY(-5vw);
+		transform: translateX(3.5vw) translateY(-5vw) scaleX(-1) scaleY(-1);
 	}
 }
