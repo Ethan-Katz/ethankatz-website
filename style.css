@@ -344,13 +344,13 @@ a {
 	/* About Media */
 	
 	.AboutArrow {
-		transform: translateX(56vw) translateY(-19vw);
+		transform: translateX(42vw) translateY(-38vw);
 	}
 	.About-arrow {
-		transform: rotate(208deg);
+		transform: rotate(170deg);
 	}
 	.aboutLine {
-		transform: rotate(-25deg) translateX(-7.5vw) translateY(-7vw) scaleX(-1);
+		transform: rotate(-25deg) translateX(-7vw) translateY(-6.5vw) scaleX(-1);
 	}
 	.About-arrowText {
 		transform: translateX(-8vw) translateY(-25vw);
