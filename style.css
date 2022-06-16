@@ -395,3 +395,33 @@ a {
 		transform: translateX(3.5vw) translateY(-5vw) scaleX(-1) scaleY(-1);
 	}
 }
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+		body {
+			background-color: black;
+		}
+		.design {
+			background-color: black;
+			box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3), 0 4px 20px 0 rgba(255, 255, 255, 0.3);
+		}
+		.Github {
+			background-color: black;
+			box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3), 0 4px 20px 0 rgba(255, 255, 255, 0.3);
+		}
+		.gitImage {
+			filter: invert();
+		}
+		.git-arrow {
+			border-color: white white transparent transparent;
+		}
+		.Linkedin {
+			background-color: black;
+			box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3), 0 4px 20px 0 rgba(255, 255, 255, 0.3);
+		}
+		.Resume {
+			background-color: black;
+			box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3), 0 4px 20px 0 rgba(255, 255, 255, 0.3);
+		}
+	}
