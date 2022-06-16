@@ -325,9 +325,9 @@ a {
 		saturate(150%);
 }
 
-/* Media Queries */
+/* Portrait Support */
 
-@media (max-width: 600px) {
+@media (orientation: portrait) {
 	
 	/* Root Media */
 	
