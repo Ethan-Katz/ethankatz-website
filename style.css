@@ -40,6 +40,7 @@ a {
 	width: calc(15vw + var(--mobile));
 	aspect-ratio: 1 /1;
 	z-index: 5;
+	opacity: 0;
 }
 
 .About-arrow {
