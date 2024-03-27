@@ -1,0 +1,200 @@
+:root {
+  --mobile: 0%;
+  --mobileArrow: 0vw;
+  --mobileText: 0%;
+}
+
+body {
+  font-family: Permanent Marker;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  height: 1vw;
+  width: 30vw;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-inline: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(3, 55, 3);
+}
+.formclass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  margin-inline: auto;
+  width: fit-content;
+  font-size: 1.3vw;
+  height: 100%;
+  /* overflow: auto; */
+}
+
+/* .formclass > * {
+  display: block;
+} */
+
+.contactme {
+  color: orange;
+  text-align: center;
+  font-size: calc(1.9vw + var(--mobileText));
+  margin-top: -1em;
+}
+
+.floatingbutton {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 40px;
+  color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+.design {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: calc(45vw + var(--mobile));
+  height: calc(45vw + var(--mobile));
+  aspect-ratio: 1 /1;
+  z-index: -2;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.LinkArrow {
+  position: absolute;
+  transform: translateX(5vw) translateY(-5vw);
+  margin: auto;
+  width: 0vw;
+  aspect-ratio: 1 /1;
+  z-index: 10;
+}
+
+.Link-arrow {
+  position: absolute;
+  top: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 0vw;
+  width: 0vw;
+  border: calc(1vw + var(--mobileArrow)) solid;
+  border-color: #027fbd #027fbd transparent transparent;
+  transform: rotate(deg);
+}
+
+.GitArrow {
+  position: absolute;
+  transform: translateX(-2vw) translateY(-25vw);
+  margin: auto;
+  width: 0vw;
+  aspect-ratio: 1 /1;
+  z-index: 10;
+}
+
+.git-arrow {
+  position: absolute;
+  top: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 0vw;
+  width: 0vw;
+  border: calc(1vw + var(--mobileArrow)) solid;
+  border-color: black black transparent transparent;
+  transform: rotate(55deg);
+}
+
+.AboutArrow {
+  position: absolute;
+  transform: translateX(43vw) translateY(-20vw);
+  margin: auto;
+  width: calc(15vw + var(--mobile));
+  aspect-ratio: 1 /1;
+  z-index: 5;
+  opacity: 1;
+}
+
+.About-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 100;
+  margin: auto;
+  height: 0vw;
+  width: 0vw;
+  border: calc(1vw + var(--mobileArrow)) solid;
+  border-color: orange orange transparent transparent;
+  transform: rotate(245deg);
+}
+
+@media (orientation: portrait) {
+  /* Root Media */
+
+  :root {
+    --mobile: 12vw;
+  }
+  :root {
+    --mobileArrow: 1vw;
+  }
+  :root {
+    --mobileText: 1vw;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+  .design {
+    background-color: black;
+    box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3),
+      0 4px 20px 0 rgba(255, 255, 255, 0.3);
+  }
+  label {
+    color: white;
+  }
+  /* .contactme {
+    color: white;
+  } */
+  .git-arrow {
+    border-color: white white transparent transparent;
+  }
+}
