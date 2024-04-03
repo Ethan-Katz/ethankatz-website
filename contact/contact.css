@@ -101,7 +101,6 @@ input[type="submit"]:hover {
   margin: auto; */
   width: calc(45vw + var(--mobile));
   aspect-ratio: 1 /1;
-  z-index: -2;
   border-radius: 50%;
   background-color: #0f172a;
   transition: 0.5s;
