@@ -32,6 +32,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 textarea{
   height: 10vh;
