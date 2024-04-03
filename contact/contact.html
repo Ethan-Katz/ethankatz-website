@@ -10,8 +10,9 @@
 
 <body>
     <section class="design">
-        <form netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true" action="#"
+        <form method="POST" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true" action="#"
             class="formclass" netlify>
+
             <p class="contactme">Contact Me</p>
 
             <label for="fname">First Name</label>
@@ -29,7 +30,7 @@
 
             <textarea id="message" name="message" placeholder="Write something.." required
                 style="height: 80px"></textarea>
-            <div data-netlify-recaptcha="true" style="margin-inline: auto;"></div>
+            <div data-netlify-recaptcha="true" required style="margin-inline: auto;"></div>
             <input type="submit" value="Submit" />
         </form>
         <section class="LinkArrow">

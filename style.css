@@ -1,7 +1,7 @@
 :root {
   --mobile: 0%;
   --mobileArrow: 0vw;
-  --mobileText: 0%;
+  --mobileText: 0%;  
 }
 
 body {
@@ -18,18 +18,20 @@ a {
   height: 80px;
   bottom: 40px;
   right: 40px;
-  color: #ffffff;
+  color: #000000;
   border-radius: 50px;
   text-align: center;
+}
+
+.floatingbutton:hover {
+  color: gray;
 }
 
 .my-float {
   margin-top: 22px;
 }
 
-/* Design of Page */
-
-.design {
+.main-bubble {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -48,7 +50,7 @@ a {
 
 /* About Arrow */
 
-.AboutArrow {
+.about-arrow {
   position: absolute;
   transform: translateX(45vw);
   margin: auto;
@@ -58,7 +60,7 @@ a {
   opacity: 1;
 }
 
-.About-arrow {
+.about-line {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -121,7 +123,7 @@ a {
 }
 
 .mainImage:hover {
-  opacity: 0;
+  opacity: 0.2;
   /* width: calc(44vw + var(--mobile)); */
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 }
@@ -191,6 +193,77 @@ a {
   border: calc(1vw + var(--mobileArrow)) solid;
   border-color: black black transparent transparent;
   transform: rotate(90deg);
+}
+
+/* AppStore */
+
+.AppStore {
+  position: absolute;
+  transform: translateX(-6vw) translateY(-14vw);
+  margin: auto;
+  width: calc(13vw + var(--mobile));
+  aspect-ratio: 1 /1;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: oldlace;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.AppStore:hover {
+  z-index: 2;
+}
+
+.AppStore:hover .AppStoreImage {
+  width: calc(12vw + var(--mobile));
+}
+
+/* AppStore Image */
+
+.AppStoreImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: calc(11vw + var(--mobile));
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  z-index: 0;
+  transition: 0.5s;
+}
+
+.AppStoreImage:hover {
+  width: calc(9vw + var(--mobile));
+}
+
+.AppStoreImage:hover .Linkedin {
+  z-index: 2;
+}
+
+/* App Arrow */
+
+.AppArrow {
+  position: absolute;
+  transform: translateX(-8vw) translateY(-7vw);
+  margin: auto;
+  width: 0vw;
+  aspect-ratio: 1 /1;
+  z-index: 10;
+}
+
+.App-arrow {
+  position: absolute;
+  top: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 0vw;
+  width: 0vw;
+  border: calc(1vw + var(--mobileArrow)) solid;
+  border-color: #0a4969 #0a4969 transparent transparent;
+  transform: rotate(45deg);
 }
 
 /* Linkedin */
@@ -268,9 +341,9 @@ a {
 
 .Resume {
   position: sticky;
-  transform: translateX(-28vw);
+  transform: translateX(-20vw) translateY(16vw);
   margin: auto;
-  width: calc(25vw + var(--mobile));
+  width: calc(18vw + var(--mobile));
   aspect-ratio: 1 /1;
   z-index: -1;
   border-radius: 50%;
@@ -283,7 +356,7 @@ a {
 }
 
 .Resume:hover .resumeImage {
-  width: calc(23vw + var(--mobile));
+  width: calc(17vw + var(--mobile));
 }
 
 /* Resume Image */
@@ -295,7 +368,7 @@ a {
   right: 0;
   left: 0;
   margin: auto;
-  width: calc(22vw + var(--mobile));
+  width: calc(16vw + var(--mobile));
   aspect-ratio: 1 / 1;
   z-index: 0;
   transition: 0.5s;
@@ -309,7 +382,7 @@ a {
 
 .resumeArrow {
   position: absolute;
-  transform: translateX(-13vw) translateY(-40vw);
+  transform: translateX(-11vw) translateY(-15vw);
   margin: auto;
   width: calc(15vw + var(--mobile));
   aspect-ratio: 1 /1;
@@ -327,7 +400,7 @@ a {
   width: 0vw;
   border: calc(1vw + var(--mobileArrow)) solid;
   border-color: green green transparent transparent;
-  transform: rotate(135deg);
+  transform: rotate(100deg);
 }
 
 .Res-arrowText {
@@ -340,14 +413,14 @@ a {
   font-size: calc(1.9vw + var(--mobileText));
   word-wrap: break-word;
   text-align: center;
-  transform: translateX(8vw) translateY(-1vw);
+  transform: translateX(-9vw) translateY(3vw);
 }
 
 .resLine {
   position: sticky;
   width: calc(15vw + var(--mobile));
   z-index: -1;
-  transform: rotate(90deg) translateX(6vw) translateY(-4.1vw);
+  transform: rotate(70deg) translateX(5.5vw) translateY(7.5vw) scaleX(-1);
   filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(100deg)
     saturate(150%);
 }
@@ -369,10 +442,10 @@ a {
 
   /* About Media */
 
-  .AboutArrow {
+  .about-arrow {
     transform: translateX(42vw) translateY(-38vw);
   }
-  .About-arrow {
+  .about-line {
     transform: rotate(170deg);
   }
   .aboutLine {
@@ -383,7 +456,7 @@ a {
   }
   .mainImageText {
     transform: translate(50%, -55%);
-    font-size: calc(1.6vw);
+    font-size: calc(1.75vw);
   }
 
   /* GitHub Media */
@@ -404,6 +477,18 @@ a {
     transform: translateX(55vw) translateY(26vw);
   }
   .Link-arrow {
+    transform: rotate(195deg);
+  }
+
+  /* AppStore Media */
+
+  .AppStore {
+    transform: translateX(35vw) translateY(20vw);
+  }
+  .AppArrow {
+    transform: translateX(55vw) translateY(26vw);
+  }
+  .App-arrow {
     transform: rotate(195deg);
   }
 
@@ -438,7 +523,7 @@ a {
   .floatingbutton {
     color: rgb(255, 255, 255);
   }
-  .design {
+  .main-bubble {
     background-color: black;
     box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3),
       0 4px 20px 0 rgba(255, 255, 255, 0.3);
@@ -455,6 +540,11 @@ a {
     border-color: white white transparent transparent;
   }
   .Linkedin {
+    background-color: black;
+    box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3),
+      0 4px 20px 0 rgba(255, 255, 255, 0.3);
+  }
+  .AppStore {
     background-color: black;
     box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3),
       0 4px 20px 0 rgba(255, 255, 255, 0.3);

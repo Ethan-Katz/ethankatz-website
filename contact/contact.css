@@ -42,20 +42,16 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: rgb(3, 55, 3);
 }
+
 .formclass {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-inline: auto;
   width: fit-content;
   font-size: 1.3vw;
   height: 100%;
-  /* overflow: auto; */
 }
-
-/* .formclass > * {
-  display: block;
-} */
 
 .contactme {
   color: orange;
@@ -74,7 +70,9 @@ input[type="submit"]:hover {
   border-radius: 50px;
   text-align: center;
 }
-
+.floatingbutton:hover {
+  color: gray;
+}
 .my-float {
   margin-top: 22px;
 }
@@ -167,18 +165,13 @@ input[type="submit"]:hover {
 }
 
 @media (orientation: portrait) {
-  /* Root Media */
-
   :root {
     --mobile: 12vw;
-  }
-  :root {
     --mobileArrow: 1vw;
-  }
-  :root {
     --mobileText: 1vw;
   }
 }
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
@@ -191,9 +184,6 @@ input[type="submit"]:hover {
   label {
     color: white;
   }
-  /* .contactme {
-    color: white;
-  } */
   .git-arrow {
     border-color: white white transparent transparent;
   }
