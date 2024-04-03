@@ -33,6 +33,10 @@ textarea {
   margin-bottom: 16px;
   resize: none;
 }
+textarea{
+  height: 10vh;
+
+}
 
 input[type="submit"] {
   background-color: #8b5cf6;
@@ -202,9 +206,5 @@ label {
   textarea {
     width: 100%;
     height: auto;
-  }
-
-  textarea {
-    height: 10svh;
   }
 }
