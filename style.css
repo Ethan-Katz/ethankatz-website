@@ -3,7 +3,7 @@
   --mobileArrow: 0vw;
   --mobileText: 0%;
   /* --box-shadow-color: 255, 255, 255; */
-  --background-color: rgb(2 6 23);
+  --background-color: rgb(2, 6, 23);
 }
 
 body {
@@ -18,9 +18,9 @@ a {
 
 /* Floating Button */
 .floating-button {
- --position: min(7vw, 7vh);
+  --position: min(7vw, 7vh);
   --size: max(4vw, 6vh);
-  position: absolute;
+  position: fixed;
   bottom: var(--position);
   right: var(--position);
   color: white;
@@ -30,6 +30,11 @@ a {
   height: var(--size);
   font-size: var(--size);
   display: flex;
+  z-index: 1;
+}
+
+.floating-button i::before {
+  background-color: var(--background-color);
 }
 
 .floating-button:hover {
@@ -48,7 +53,6 @@ a {
   height: calc(45vw + var(--mobile));
   z-index: -2;
   border-radius: 50%;
-  background-color: var(--background-color);
   box-shadow: 0 4px 20px 0 rgba(var(--box-shadow-color), 0.2),
     0 4px 20px 0 rgba(var(--box-shadow-color), 0.2);
   transition: 0.5s;
@@ -94,12 +98,13 @@ a {
 /* About Arrow */
 .about-arrow-container {
   position: absolute;
-  transform: translateX(45vw);
   margin: auto;
   width: calc(15vw + var(--mobile));
   aspect-ratio: 1 /1;
   z-index: 5;
   opacity: 1;
+  top: 33%;
+  left: 100%;
 }
 
 .about-arrow {
@@ -248,7 +253,7 @@ a {
   height: 0vw;
   width: 0vw;
   border: calc(1vw + var(--mobileArrow)) solid;
-  border-color: rgb(57,93,142) rgb(57,93,142) transparent transparent;
+  border-color: rgb(57, 93, 142) rgb(57, 93, 142) transparent transparent;
   transform: rotate(45deg);
 }
 
@@ -385,4 +390,153 @@ a {
   transform: rotate(70deg) translateX(5.5vw) translateY(7.5vw) scaleX(-1);
   filter: brightness(0.9) invert(0.7) sepia(0.5) hue-rotate(100deg)
     saturate(150%);
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (orientation: portrait) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: initial;
+  }
+
+  /* .git-arrow-container,
+  .app-arrow-container,
+  .link-arrow-container,
+  .resume-arrow-container,
+  .linkedin,
+  .resume,
+  .app-store {
+    display: none;
+  } */
+
+  /* Main */
+  .main-bubble {
+    display: grid;
+    grid-template-areas:
+      "image image"
+      "image image"
+      "github linkedin"
+      "app-store resume";
+    gap: 2rem;
+    max-width: 350px;
+    width: 90%;
+    position: unset;
+    margin-inline: auto;
+    margin-top: 2rem;
+  }
+
+  .image-container {
+    grid-area: image;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .main-image {
+    width: 100%;
+    position: unset;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: 0;
+  }
+
+  .main-image:hover {
+    opacity: 0;
+  }
+
+  .main-text {
+    position: unset;
+    transform: none;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  /* About Arrow */
+  .about-arrow-container {
+    width: 100%;
+    position: unset;
+    transform: none;
+    display: flex;
+    flex-direction: column-reverse;
+    aspect-ratio: unset;
+    grid-row: 2/-1;
+  }
+
+  .about-arrow {
+    position: unset;
+    border-width: 0.8rem;
+    transform: rotate(-45deg);
+  }
+
+  .about-arrow-text {
+    position: unset;
+    font-size: calc(3.97vw + var(--mobileText));
+    transform: none;
+    margin: 0;
+  }
+
+  .about-line,
+  .resume-line,
+  .resume-arrow-text {
+    display: none;
+  }
+
+  .github {
+    grid-area: github;
+  }
+
+  .linkedin {
+    grid-area: linkedin;
+  }
+
+  .app-store {
+    grid-area: app-store;
+  }
+
+  .resume {
+    grid-area: resume;
+  }
+
+  .github,
+  .git-image,
+  .linkedin,
+  .link-image,
+  .app-store,
+  .app-store-image,
+  .resume,
+  .resume-image {
+    position: unset;
+    transform: none;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .git-arrow-container,
+  .link-arrow-container,
+  .app-arrow-container,
+  .resume-arrow-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 333px) {
+  .main-text {
+    grid-row: 2/-1;
+    opacity: 1;
+  }
+
+  .about-arrow-container {
+    display: none;
+  }
 }
