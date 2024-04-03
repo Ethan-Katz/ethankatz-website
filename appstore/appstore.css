@@ -2,97 +2,98 @@
   --mobile: 0%;
   --mobileArrow: 0vw;
   --mobileText: 0%;
+  --background-color: rgb(2 6 23);
 }
 
 body {
   font-family: Permanent Marker;
-  background-color: white;
+  background-color: rgb(2 6 23);
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-.floatingbutton {
-  position: fixed;
-  width: 80px;
-  height: 80px;
-  top: 20px;
-  left: 30px;
-  color: #000000;
+.floating-button {
+  --position: min(7vw, 7vh);
+  --size: max(4vw, 6vh);
+  position: absolute;
+  top: var(--position);
+  left: var(--position);
+  color: white;
   border-radius: 50px;
   text-align: center;
+  width: var(--size);
+  height: var(--size);
+  font-size: var(--size);
+  display: flex;
 }
 
-.floatingbutton:hover {
+.floating-button:hover {
   color: gray;
 }
 
-.my-float {
-  margin-top: 22px;
-}
-
-.design-container {
-  display: flex;
+.bubble-container {
+  --image-size: calc(15vw + var(--mobile));
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
   justify-content: center;
+  min-height: 100vh;
+  margin-inline: 3rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 100vh; 
-}
-
-.design {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 1em;
-  width: calc(35vw + var(--mobile));
-  aspect-ratio: 1 /1;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
-}
-
-.mainImageText {
-  position: absolute;
-  color: black;
-  top: 5%;
-  right: 50%;
+  grid-row: 2 / 3;
   text-align: center;
+}
+
+.app:first-child {
+  grid-column: 2 /5;
+}
+
+.app:last-child {
+  grid-column: 6 / 9;
+}
+
+.bubble {
+  width: var(--image-size);
+  height: var(--image-size);
+  border-radius: 50%;
+}
+
+.header {
+  color: white;
   font-size: calc(1.4vw);
-  opacity: 0;
-  transform: translateX(50%);
+}
+
+.bio {
+  color: white;
+  font-size: calc(1.2vw);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  max-width: 400px;
 }
 
 /* Bash Image */
-
-.BashImage {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: calc(33vw + var(--mobile));
+.image {
+  display: block;
+  width: inherit;
+  height: inherit;
   object-fit: cover;
-  aspect-ratio: 1 / 1;
   border-radius: 50%;
   transition: 0.5s;
 }
 
-.design:hover .BashImage{
-  opacity: 0.2;
-}
-
-.design:hover .mainImageText {
-  opacity: 1;
-  transition: 0.5s;
+.image:hover {
+  transform: scale(1.07);
 }
 
 /* Github Arrow */
-
-.BashArrow {
+.bash-arrow-container {
   position: absolute;
   transform: translateX(36vw) translateY(-13vw);
   margin: auto;
@@ -101,7 +102,7 @@ a {
   z-index: 10;
 }
 
-.Bash-arrow {
+.bash-arrow {
   position: absolute;
   top: 100;
   bottom: 0;
@@ -111,42 +112,25 @@ a {
   height: 0vw;
   width: 0vw;
   border: calc(1vw + var(--mobileArrow)) solid;
-  border-color: black black transparent transparent;
+  border-color: white white transparent transparent;
   transform: rotate(90deg);
 }
 
-@media (orientation: portrait) {
-  :root {
-    --mobile: 12vw;
-    --mobileArrow: 1vw;
-    --mobileText: 1vw;
+@media screen and (orientation: portrait) {
+  .bubble-container {
+    --image-size: calc(15vh + var(--mobile));
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 3rem;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
+  .header {
+    font-size: 1.5rem;
   }
-  .floatingbutton {
-    color: white;
-  }
-  .design {
-    background-color: black;
-    box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3),
-      0 4px 20px 0 rgba(255, 255, 255, 0.3);
-  }
-  label {
-    color: white;
-  }
-  .ButtonBash {
-    background-color: black;
-    box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3),
-      0 4px 20px 0 rgba(255, 255, 255, 0.3);
-  }
-  .Bash-arrow {
-    border-color: white white transparent transparent;
-  }
-  .mainImageText {
-    color: white;
+
+  .bio {
+    font-size: 1rem;
   }
 }
