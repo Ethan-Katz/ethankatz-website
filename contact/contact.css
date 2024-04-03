@@ -6,13 +6,19 @@
 
 body {
   font-family: Permanent Marker;
-  background-color: white;
+  background-color: rgb(2 6 23);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
 }
 
 a {
   text-decoration: none;
 }
 
+/* Form */
 input[type="text"],
 input[type="email"],
 select,
@@ -29,7 +35,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: green;
+  background-color: #8b5cf6;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -37,22 +43,24 @@ input[type="submit"] {
   cursor: pointer;
   margin-top: 16px;
   margin-inline: auto;
+  transition: background-color 0.5s;
 }
 
 input[type="submit"]:hover {
-  background-color: rgb(3, 55, 3);
+  background-color: #6d28d9;
 }
 
-.formclass {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-inline: auto;
   width: fit-content;
   font-size: 1.3vw;
-  height: 100%;
+  min-height: 100%;
 }
 
+/* Header */
 .contactme {
   color: orange;
   text-align: center;
@@ -60,41 +68,44 @@ input[type="submit"]:hover {
   margin-top: -1em;
 }
 
-.floatingbutton {
-  position: fixed;
-  width: 80px;
-  height: 80px;
-  bottom: 40px;
-  right: 40px;
-  color: #ffffff;
+/* Floating Button */
+.floating-button {
+  --position: min(7vw, 7svh);
+  --size: max(4vw, 6svh);
+  position: absolute;
+  bottom: var(--position);
+  right: var(--position);
+  color: white;
   border-radius: 50px;
   text-align: center;
+  width: var(--size);
+  height: var(--size);
+  font-size: var(--size);
+  display: flex;
 }
-.floatingbutton:hover {
+.floating-button:hover {
   color: gray;
 }
-.my-float {
-  margin-top: 22px;
-}
 
-.design {
-  position: absolute;
+/* Main */
+.main-bubble {
+  /* position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  margin: auto;
+  margin: auto; */
   width: calc(45vw + var(--mobile));
-  height: calc(45vw + var(--mobile));
   aspect-ratio: 1 /1;
   z-index: -2;
   border-radius: 50%;
-  background-color: white;
+  background-color: #0f172a;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
 
-.LinkArrow {
+/* Arrows */
+.link-arrow-container {
   position: absolute;
   transform: translateX(5vw) translateY(-5vw);
   margin: auto;
@@ -103,7 +114,7 @@ input[type="submit"]:hover {
   z-index: 10;
 }
 
-.Link-arrow {
+.link-arrow {
   position: absolute;
   top: 100;
   bottom: 0;
@@ -117,7 +128,7 @@ input[type="submit"]:hover {
   transform: rotate(deg);
 }
 
-.GitArrow {
+.git-arrow-container {
   position: absolute;
   transform: translateX(-2vw) translateY(-25vw);
   margin: auto;
@@ -136,11 +147,11 @@ input[type="submit"]:hover {
   height: 0vw;
   width: 0vw;
   border: calc(1vw + var(--mobileArrow)) solid;
-  border-color: black black transparent transparent;
+  border-color: white white transparent transparent;
   transform: rotate(55deg);
 }
 
-.AboutArrow {
+.about-arrow-container {
   position: absolute;
   transform: translateX(43vw) translateY(-20vw);
   margin: auto;
@@ -150,7 +161,7 @@ input[type="submit"]:hover {
   opacity: 1;
 }
 
-.About-arrow {
+.about-arrow {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -164,27 +175,37 @@ input[type="submit"]:hover {
   transform: rotate(245deg);
 }
 
-@media (orientation: portrait) {
-  :root {
-    --mobile: 12vw;
-    --mobileArrow: 1vw;
-    --mobileText: 1vw;
-  }
+label {
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
+@media screen and (orientation: portrait) {
+  .main-bubble {
+    background: none;
+    width: 80%;
   }
-  .design {
-    background-color: black;
-    box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.3),
-      0 4px 20px 0 rgba(255, 255, 255, 0.3);
-  }
-  label {
-    color: white;
-  }
+  .about-arrow,
+  .link-arrow,
   .git-arrow {
-    border-color: white white transparent transparent;
+    display: none;
+  }
+  .form {
+    width: 100%;
+    font-size: 2.5svh;
+  }
+  .contactme {
+    font-size: 3.5svh;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    height: auto;
+  }
+
+  textarea {
+    height: 10svh;
   }
 }
