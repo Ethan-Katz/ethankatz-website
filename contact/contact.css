@@ -78,8 +78,8 @@ input[type="submit"]:hover {
   --position: min(7vw, 7svh);
   --size: max(4vw, 6svh);
   position: absolute;
-  bottom: var(--position);
-  right: var(--position);
+  top: var(--position);
+  left: var(--position);
   color: white;
   border-radius: 50px;
   text-align: center;
