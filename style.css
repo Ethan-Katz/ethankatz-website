@@ -16,10 +16,6 @@ a {
   text-decoration: none;
 }
 
-.created-by {
-  display: none;
-}
-
 /* Floating Button */
 .floating-button {
   --position: min(7vw, 7vh);
@@ -392,7 +388,9 @@ a {
     saturate(150%);
 }
 
-.mobile {
+.mobile,
+.created-by,
+.widget-title {
   display: none;
 }
 
@@ -418,7 +416,6 @@ a {
     width: 90%;
     position: unset;
     margin-inline: auto;
-    margin-top: 2rem;
     margin-bottom: 6rem;
   }
 
@@ -528,6 +525,37 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .widget-title {
+    font-family: Permanent Marker;
+    color: white;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.9vh + var(--mobileText));
+    margin: 0;
+  }
+  .app-store,
+  .github,
+  .resume,
+  .linkedin {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .linkedin-color {
+    color: #027fbd;
+  }
+  .resume-color {
+    color: green;
+  }
+  .apps-color {
+    color: rgb(57, 93, 142);
+  }
+  .github-color {
+    color: white;
   }
 }
 
