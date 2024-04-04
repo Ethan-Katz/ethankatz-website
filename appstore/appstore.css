@@ -9,6 +9,8 @@ body {
   font-family: Permanent Marker;
   background-color: rgb(2 6 23);
   margin: 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 a {
@@ -81,15 +83,14 @@ a {
 /* Bash Image */
 .image {
   display: block;
-  width: inherit;
+  width: 8vw;
   height: inherit;
   object-fit: cover;
-  border-radius: 50%;
   transition: 0.5s;
 }
 
 .image:hover {
-  transform: scale(1.07);
+  transform: scale(1.1);
 }
 
 /* Github Arrow */
@@ -116,6 +117,18 @@ a {
   transform: rotate(90deg);
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1rem;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media screen and (orientation: portrait) {
   .bubble-container {
     --image-size: calc(15vh + var(--mobile));
@@ -132,5 +145,8 @@ a {
 
   .bio {
     font-size: 1rem;
+  }
+  .image {
+    width: 10vh;
   }
 }
