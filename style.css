@@ -51,7 +51,7 @@ a {
   font-size: 1.2vw;
   display: sticky;
   z-index: 4;
-  transform: translateY(6vw);
+  transform: translateY(6vw) translateX(1vw);
 }
 
 /* Main */
