@@ -578,7 +578,7 @@ a {
   }
   .floating-text {
     font-size: 1.3vh;
-    transform: translateY(6.5vh);
+    transform: translateY(7vh);
   }
 }
 
