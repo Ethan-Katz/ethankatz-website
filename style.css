@@ -48,7 +48,7 @@ a {
   text-align: center;
   width: var(--size);
   height: var(--size);
-  font-size: 1.25vw;
+  font-size: 1.2vw;
   display: sticky;
   z-index: 4;
   transform: translateY(6vw);
@@ -578,7 +578,7 @@ a {
   }
   .floating-text {
     font-size: 1.3vh;
-    transform: translateY(6vh) translateX(-1vw);
+    transform: translateY(6.5vh) translateX(-1vw);
   }
 }
 
