@@ -30,11 +30,28 @@ a {
   height: var(--size);
   font-size: var(--size);
   display: flex;
-  z-index: 1;
+  z-index: 5;
 }
 
 .floating-button:hover {
   color: gray;
+}
+
+.floating-text {
+  --position: min(7vw, 7vh);
+  --size: max(5vw, 6vh);
+  position: fixed;
+  bottom: var(--position);
+  right: var(--position);
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  width: var(--size);
+  height: var(--size);
+  font-size: 1.25vw;
+  display: sticky;
+  z-index: 4;
+  transform: translateY(6vw);
 }
 
 /* Main */
@@ -559,9 +576,13 @@ a {
   .github-color {
     color: white;
   }
+  .floating-text {
+    font-size: 1.3vh;
+    transform: translateY(6vh) translateX(-1vw);
+  }
 }
 
-@media screen and (max-width: 333px) {
+@media screen and (max-width: 400px) {
   .main-text {
     grid-row: 2/-1;
     opacity: 1;
