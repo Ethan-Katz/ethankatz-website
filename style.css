@@ -48,10 +48,10 @@ a {
   text-align: center;
   width: var(--size);
   height: var(--size);
-  font-size: 1.2vw;
+  font-size: 1vw;
   display: sticky;
   z-index: 4;
-  transform: translateY(6vw) translateX(1vw);
+  transform: translateY(6vw);
 }
 
 /* Main */
