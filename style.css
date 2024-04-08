@@ -453,6 +453,10 @@ a {
     z-index: 0;
   }
 
+  .main-image:hover {
+    opacity: 1;
+  }
+
   .main-text {
     position: unset;
     transform: none;
