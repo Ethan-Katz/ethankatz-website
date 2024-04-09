@@ -454,7 +454,7 @@ a {
   }
 
   .main-image:hover {
-    opacity: 0.2;
+    opacity: 0;
   }
 
   .main-text {
