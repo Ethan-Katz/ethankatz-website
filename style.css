@@ -454,7 +454,7 @@ a {
   }
 
   .main-image:hover {
-    opacity: 1;
+    opacity: 0.2;
   }
 
   .main-text {
@@ -590,5 +590,8 @@ a {
 
   .about-arrow-container {
     display: none;
+  }
+  .main-image:hover {
+    opacity: 1;
   }
 }
