@@ -241,7 +241,7 @@ a {
   right: 0;
   left: 0;
   margin: auto;
-  width: calc(11vw + var(--mobile));
+  width: calc(13vw + var(--mobile));
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   z-index: 0;
@@ -268,7 +268,7 @@ a {
   height: 0vw;
   width: 0vw;
   border: calc(1vw + var(--mobileArrow)) solid;
-  border-color: rgb(57, 93, 142) rgb(57, 93, 142) transparent transparent;
+  border-color: rgb(0, 143, 243) rgb(0, 143, 243) transparent transparent;
   transform: rotate(45deg);
 }
 
