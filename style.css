@@ -51,7 +51,7 @@ a {
   font-size: 1vw;
   display: sticky;
   z-index: 4;
-  transform: translateY(6vw) translateX(0.5vw);
+  transform: translateY(6vw) translateX(-0.4vw);
 }
 
 /* Main */
@@ -578,7 +578,7 @@ a {
   }
   .floating-text {
     font-size: 1.3vh;
-    transform: translateY(7vh);
+    transform: translateY(7vh) translateX(-1.8vw);
   }
 }
 
