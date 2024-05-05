@@ -52,6 +52,7 @@ a {
   display: sticky;
   z-index: 4;
   transform: translateY(6vw) translateX(-0.4vw);
+  -webkit-text-stroke: 1px rgb (2, 6, 23);
 }
 
 /* Main */
