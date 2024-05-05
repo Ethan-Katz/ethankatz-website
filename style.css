@@ -109,7 +109,7 @@ a {
   right: 50%;
   transform: translate(50%, -50%);
   text-align: center;
-  font-size: calc(4.5vw);
+  font-size: calc(4vw);
   opacity: 1;
   pointer-events: none;
   transition: 0.5s;
