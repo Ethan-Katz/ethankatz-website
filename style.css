@@ -31,6 +31,7 @@ a {
   font-size: var(--size);
   display: flex;
   z-index: 5;
+  -webkit-text-stroke: 0.2px rgb(2, 6, 23);
 }
 
 .floating-button:hover {
@@ -48,11 +49,11 @@ a {
   text-align: center;
   width: var(--size);
   height: var(--size);
-  font-size: 1vw;
+  font-size: 1.2vw;
   display: sticky;
   z-index: 4;
   transform: translateY(6vw) translateX(-0.4vw);
-  -webkit-text-stroke: 1px rgb(2, 6, 23);
+  -webkit-text-stroke: 0.1px rgb(2, 6, 23);
 }
 
 /* Main */
