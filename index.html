@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/style.css?v=1.0" />
@@ -50,9 +50,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap&family=Permanent+Marker&display=swap"
       rel="stylesheet" />
     <link
+      href="https://fonts.googleapis.com/css?family=Jura"
+      rel="stylesheet" />
+    <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- Google tag (gtag.js) -->
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-3BS5N4R20S"></script>
@@ -66,105 +68,96 @@
       gtag("config", "G-3BS5N4R20S");
     </script>
   </head>
-
   <body>
-    <section class="main-bubble">
-      <div class="image-container">
-        <img
-          draggable="false"
-          src="https://ik.imagekit.io/ethankatz/IMG_0045_srifbNHCv.jpg?updatedAt=1703605185402"
-          alt=""
-          class="main-image" />
-        <p class="main-text">
-          Hi, I'm Ethan Katz, a tech enthusiast with multiple years of
-          experience in hi-tech. Currently, I'm pursuing my studies at Reichman
-          University in Israel, learning Interactive Communications in UI/UX
-          Product Design. I'm currently living in Israel but I grew up in
-          Detroit, Michigan. Besides for my education and professional
-          endeavors, I love staying up to date with the latest technology by
-          reading blogs and watching videos to broaden my horizons and embrace
-          the ever-evolving landscape of technology. In my free time, I enjoy
-          coding and I have created a couple of apps currently on the App Store.
-        </p>
-        <p class="name-text">Ethan Katz</p>
-        <p class="short-text">Student / Developer</p>
-        <div class="about-arrow-container">
-          <p class="about-arrow-text">
-            <span class="desktop">Hover</span
-            ><span class="mobile">Click</span> Here For My Bio
-          </p>
-          <img
-            draggable="false"
-            src="https://ik.imagekit.io/ethankatz/line_9pZiDyYH1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655300136056"
-            alt=""
-            class="about-line" />
-          <div class="about-arrow"></div>
-        </div>
+    <div class="header-div">
+      <div>
+        <p class="text-name">Ethan Katz</p>
+        <p class="text-bio">Student / Developer</p>
       </div>
-      <div class="github">
+      <div class="nav-bar">
+        <a href="appstore/appstore.html">
+          <img
+            class="appstore-button"
+            src="https://ik.imagekit.io/ethankatz/image%203_d5ofz4-LZ.png?updatedAt=1715024123411"
+            alt="" />
+        </a>
         <a href="Https://Github.com/Ethan-Katz" target="_blank">
           <img
-            draggable="false"
+            class="github-button"
             src="https://ik.imagekit.io/ethankatz/githubimage_bPc_3LEwG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655300149205"
-            alt=""
-            class="git-image" />
+            alt="" />
         </a>
-        <p class="widget-title github-color">GitHub</p>
-      </div>
-      <div class="git-arrow-container">
-        <div class="git-arrow"></div>
-      </div>
-
-      <div class="linkedin">
         <a href="https://linkedin.com/in/ethanrkatz" target="_blank">
           <img
-            draggable="false"
+            class="linkedin-button"
             src="https://ik.imagekit.io/ethankatz/Linkedin__H7a9CwIHK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655300155496"
-            alt=""
-            class="linkedin-image" />
+            alt="" />
         </a>
-        <p class="widget-title linkedin-color">LinkedIn</p>
+        <div class="pill-button">
+          <a href="resume/cv.html" target="_blank"
+            ><button class="resume-button">RESUME</button></a
+          >
+          <a href="Resume-EthanKatz.pdf" download="Resume-EthanKatz"><button class="download-button fa fa-download"></button></a>
+        </div>
       </div>
-      <div class="linkedin-arrow-container">
-        <div class="linkedin-arrow"></div>
-      </div>
-      <div class="app-store">
-        <a href="/appstore/appstore.html">
+      <i class="fa-solid fa-bars menu-bar"></i>
+      <div class="nav-bar-mobile">
+        <a href="contact/contact.html">
+          <button class="non-floating-button">
+            <i class="fa-solid fa-user floating-user"></i>
+            <p class="floating-text">Contact Me</p>
+          </button>
+        </a>
+        <i class="fa-solid fa-x close-button"></i>
+        <a class="appstore-a" href="appstore/appstore.html">
           <img
-            draggable="false"
-            src="https://ik.imagekit.io/ethankatz/app-store-for-macos-round-blue-and-white-a-logo_ltjjq235c.jpg?updatedAt=1713163177936"
-            alt=""
-            class="app-store-image" />
+            class="appstore-button"
+            src="https://ik.imagekit.io/ethankatz/image%203_d5ofz4-LZ.png?updatedAt=1715024123411"
+            alt="" />
         </a>
-        <p class="widget-title apps-color">Apps</p>
-      </div>
-      <div class="app-arrow-container">
-        <div class="app-arrow"></div>
-      </div>
-      <div class="resume">
-        <a href="/resume/cv.html" target="_blank">
+        <a class="github-a" href="Https://Github.com/Ethan-Katz" target="_blank">
           <img
-            draggable="false"
-            src="https://ik.imagekit.io/ethankatz/Resume_n3mfDAhF0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655300154499"
-            alt=""
-            class="resume-image" />
+            class="github-button"
+            src="https://ik.imagekit.io/ethankatz/githubimage_bPc_3LEwG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655300149205"
+            alt="" />
         </a>
-        <p class="widget-title resume-color">Resume</p>
+        <a class="linkedin-a" href="https://linkedin.com/in/ethanrkatz" target="_blank">
+          <img
+            class="linkedin-button"
+            src="https://ik.imagekit.io/ethankatz/Linkedin__H7a9CwIHK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655300155496"
+            alt="" />
+        </a>
+        <div class="pill-button">
+          <a href="resume/cv.html"><button class="resume-button">RESUME</button></a>
+          <a href="Resume-EthanKatz.pdf" download="Resume-EthanKatz"><button class="download-button fa fa-download"></button></a>
+        </div>
       </div>
-      <div class="resume-arrow-container">
-        <p class="resume-arrow-text">Click Here For My Resume</p>
-        <img
-          draggable="false"
-          src="https://ik.imagekit.io/ethankatz/line_9pZiDyYH1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655300136056"
-          alt=""
-          class="resume-line" />
-        <div class="resume-arrow"></div>
-      </div>
-    </section>
-    <p class="created-by">Created by Ethan Katz &copy;2024</p>
-    <a href="/contact/contact.html" class="floating-button">
-      <i class="fa fa-user"></i>
-      <p class="floating-text">Contact Me</p>
+    </div>
+    <div class="main-div">
+      <img
+        class="background-image"
+        src="https://ik.imagekit.io/ethankatz/Desktop_TbOBhF9pt.svg?updatedAt=1715025002561"
+        alt="" />
+      <img
+        draggable="false"
+        src="https://ik.imagekit.io/ethankatz/IMG_0045_srifbNHCv.jpg?updatedAt=1703605185402"
+        alt=""
+        class="main-image" />
+      <p class="main-text">
+        Hi, I'm Ethan Katz, a tech enthusiast studying Interactive
+        Communications in UI/UX Product Design at Reichman University, Israel.
+        With years of experience in hi-tech, I stay updated through blogs and
+        videos, embracing the evolving tech landscape. In my free time, I enjoy
+        coding and have apps on the App Store.
+      </p>
+    </div>
+    <a href="contact/contact.html">
+      <button class="floating-button">
+        <i class="fa-solid fa-user floating-user"></i>
+        <p class="floating-text">Contact Me</p>
+      </button>
     </a>
+
+    <script src="script.js"></script>
   </body>
 </html>

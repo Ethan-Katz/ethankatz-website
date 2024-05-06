@@ -2,12 +2,12 @@
   --mobile: 0%;
   --mobileArrow: 0vw;
   --mobileText: 0%;
-  --background-color: rgb(2 6 23);
+  --background: linear-gradient(#020617, #08133f);
 }
 
 body {
   font-family: Permanent Marker;
-  background-color: rgb(2 6 23);
+  background: linear-gradient(#020617, #08133f);
   margin: 0;
   user-select: none;
   -webkit-user-select: none;
