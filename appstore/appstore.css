@@ -51,6 +51,7 @@ a {
   align-items: center;
   grid-row: 2 / 3;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .app:first-child {
@@ -148,5 +149,8 @@ a {
   }
   .image {
     width: 10vh;
+  }
+  .app {
+    margin-top: 3rem;
   }
 }

@@ -7,24 +7,7 @@ body {
   margin: 0;
 }
 
-.header-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  margin-inline: 5rem;
-  margin-bottom: 2vw;
-}
-
-.nav-bar {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.nav-bar-mobile {
-  display: none;
-}
+/* Floating Button */
 
 .floating-button {
   width: 7vw;
@@ -40,6 +23,11 @@ body {
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25),
     0px 0px 5px 3px rgba(0, 0, 0, 0.25);
   font-size: 3vw;
+  transition: 0.5s;
+}
+
+.floating-button:hover {
+  transform: scale(1.07);
 }
 
 .floating-text {
@@ -51,6 +39,134 @@ body {
 .floating-user {
   transform: translateY(0.5vw);
 }
+
+/* Top Bar */
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-inline: 5rem;
+  margin-bottom: 2vw;
+}
+
+/* Name and Bio */
+
+.text-name {
+  font-size: 5vw;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.text-bio {
+  font-size: 2.8vw;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Mobile Navigation Bar */
+
+.nav-bar-mobile {
+  display: none;
+}
+
+/* Navigation Bar Items */
+
+.appstore-button {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  color: white;
+  border: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.appstore-button:hover {
+  transform: scale(1.07);
+}
+
+.github-button {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  color: white;
+  border: 0;
+  margin: auto;
+  filter: invert();
+  transition: 0.5s;
+}
+
+.github-button:hover {
+  transform: scale(1.07);
+}
+
+.linkedin-button {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  color: white;
+  border: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.linkedin-button:hover {
+  transform: scale(1.07);
+}
+
+.resume-button {
+  background-color: #069d31;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 250px 0 0 250px;
+  border: 0;
+  width: 14vw;
+  height: 6vw;
+  font-family: Jura;
+  font-size: 2.5vw;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.resume-button:hover {
+  transform: scale(1.07);
+}
+
+.download-button {
+  background-color: #16f957;
+  color: black;
+  border-radius: 0 250px 250px 0;
+  border: 0;
+  margin-left: 1px;
+  width: 5vw;
+  height: 6vw;
+  font-size: 2.8vw !important;
+  transition: 0.5s;
+}
+
+.download-button:hover {
+  transform: scale(1.07);
+}
+
+.pill-button {
+  display: flex;
+}
+
+/* Main Section */
 
 .main-div {
   position: relative;
@@ -77,6 +193,11 @@ body {
   border: 1px solid white;
   display: block;
   margin-bottom: 3rem;
+  transition: 0.5s;
+}
+
+.main-image:hover {
+  transform: scale(1.07);
 }
 
 .main-text {
@@ -89,123 +210,64 @@ body {
   margin-bottom: 3rem;
 }
 
-.text-name {
-  font-size: 5vw;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-}
-
-.text-bio {
-  font-size: 2.8vw;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-}
-
-.appstore-button {
-  width: 6vw;
-  height: 6vw;
-  border-radius: 50%;
-  color: white;
-  border: 0;
-  margin: auto;
-}
-
-.github-button {
-  width: 6vw;
-  height: 6vw;
-  border-radius: 50%;
-  color: white;
-  border: 0;
-  margin: auto;
-  filter: invert();
-}
-
-.linkedin-button {
-  width: 6vw;
-  height: 6vw;
-  border-radius: 50%;
-  color: white;
-  border: 0;
-  margin: auto;
-}
-
-.resume-button {
-  background-color: #069d31;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 250px 0 0 250px;
-  border: 0;
-  width: 14vw;
-  height: 6vw;
-  font-family: Jura;
-  font-size: 2.5vw;
-  font-weight: 500;
-}
-.download-button {
-  background-color: #16f957;
-  color: black;
-  border-radius: 0 250px 250px 0;
-  border: 0;
-  margin-left: 1px;
-  width: 5vw;
-  height: 6vw;
-  font-size: 2.8vw !important;
-}
-
-.pill-button {
-  display: flex;
-}
-
 @media screen and (orientation: portrait) {
   .nav-bar {
     display: none;
   }
+
   .background-image {
     display: none;
   }
+
   .floating-button {
     display: none;
   }
+
   .main-image {
     width: 35vh;
     margin-bottom: 1rem;
   }
+
   .main-text {
     font-size: 2.5vh;
     max-width: 90%;
     margin-bottom: 1rem;
   }
+
   .text-name {
     font-size: 5.5vh;
   }
+
   .text-bio {
     font-size: 2.5vh;
   }
+
   .header-div {
     margin-bottom: 2.5rem;
     margin-inline: 2rem;
   }
+
   .menu-bar {
     display: block !important;
     color: white;
     font-size: 5vh;
   }
+
   .appstore-button {
     width: 10vh;
     height: 10vh;
   }
+
   .github-button {
     width: 10vh;
     height: 10vh;
   }
+
   .linkedin-button {
     width: 10vh;
     height: 10vh;
   }
+
   .nav-bar-mobile.menu-open {
     position: fixed;
     top: 1.5rem;
@@ -220,6 +282,7 @@ body {
     border: 1px solid white;
     width: 50%;
   }
+
   .close-button {
     color: white;
     position: absolute;
@@ -245,22 +308,32 @@ body {
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25),
       0px 0px 5px 3px rgba(0, 0, 0, 0.25);
     font-size: 3vw;
+    transition: 0.5s;
   }
+
+  .non-floating-button:hover {
+    transform: scale(1.07);
+  }
+
   .floating-user {
     font-size: 4vh;
   }
+
   .floating-text {
     font-size: 1.2vh;
   }
+
   .pill-button {
     width: max-content;
     margin-inline: auto;
   }
+
   .resume-button {
     width: 18vh;
     height: 10vh;
     font-size: 2.5vh;
   }
+
   .download-button {
     width: 5vh;
     height: 10vh;

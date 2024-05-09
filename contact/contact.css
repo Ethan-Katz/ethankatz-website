@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Jura;
   background: linear-gradient(#020617, #08133f);
   margin: 0;
   display: flex;
@@ -32,7 +32,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Jura;
 }
 textarea {
   height: 10vh;
@@ -48,6 +48,7 @@ input[type="submit"] {
   margin-top: 16px;
   margin-inline: auto;
   transition: background-color 0.5s;
+  font-family: Jura;
 }
 
 input[type="submit"]:hover {
@@ -70,7 +71,7 @@ input[type="submit"]:hover {
   text-align: center;
   font-size: calc(1.9vw + var(--mobileText));
   margin-top: -1em;
-  font-family: permanent marker;
+  font-family: Jura;
 }
 
 /* Floating Button */
@@ -94,17 +95,13 @@ input[type="submit"]:hover {
 
 /* Main */
 .main-bubble {
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto; */
   width: calc(45vw + var(--mobile));
   aspect-ratio: 1 /1;
   border-radius: 50%;
-  background-color: #0f172a;
+  background: linear-gradient(#08133f, #020617);
   transition: 0.5s;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25),
+    0px 0px 5px 3px rgba(0, 0, 0, 0.25);
 }
 
 /* Arrows */
@@ -209,7 +206,7 @@ label {
   }
 }
 
-@media screen and (max-Width: 1000px) {
+@media screen and (max-width: 1000px) {
   .main-bubble {
     background: none;
     width: 80%;
