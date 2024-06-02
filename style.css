@@ -54,14 +54,14 @@ body {
 /* Name and Bio */
 
 .text-name {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: bold;
   color: white;
   margin: 0;
 }
 
 .text-bio {
-  font-size: 2.8vw;
+  font-size: 2vw;
   font-weight: bold;
   color: white;
   margin: 0;
@@ -84,8 +84,8 @@ body {
 /* Navigation Bar Items */
 
 .appstore-button {
-  width: 6vw;
-  height: 6vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
   color: white;
   border: 0;
@@ -98,8 +98,8 @@ body {
 }
 
 .github-button {
-  width: 6vw;
-  height: 6vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
   color: white;
   border: 0;
@@ -113,8 +113,8 @@ body {
 }
 
 .linkedin-button {
-  width: 6vw;
-  height: 6vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
   color: white;
   border: 0;
@@ -134,10 +134,10 @@ body {
   display: inline-block;
   border-radius: 250px 0 0 250px;
   border: 0;
-  width: 14vw;
-  height: 6vw;
+  width: 12vw;
+  height: 4vw;
   font-family: Jura;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: 500;
   transition: 0.5s;
 }
@@ -153,8 +153,8 @@ body {
   border: 0;
   margin-left: 1px;
   width: 5vw;
-  height: 6vw;
-  font-size: 2.8vw !important;
+  height: 4vw;
+  font-size: 2.2vw !important;
   transition: 0.5s;
 }
 
@@ -203,7 +203,7 @@ body {
 .main-text {
   color: white;
   font-weight: 500;
-  font-size: 1.65vw;
+  font-size: 2vw;
   text-align: center;
   max-width: 55%;
   margin: auto;

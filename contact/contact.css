@@ -49,6 +49,10 @@ input[type="submit"] {
   margin-inline: auto;
   transition: background-color 0.5s;
   font-family: Jura;
+  width: 8vw;
+  height: 3vw;
+  font-size: 1.5vw;
+  
 }
 
 input[type="submit"]:hover {
